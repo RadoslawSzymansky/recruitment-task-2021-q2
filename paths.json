@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "@assets/*": [
+        "assets/*"
+      ],
+      "@assets": [
+        "assets/index"
+      ],
+      "@base/*": [
+        "base/*"
+      ],
+      "@base": [
+        "base/index"
+      ],
+      "@layouts/*": [
+        "layouts/*"
+      ],
+      "@layouts": [
+        "layouts/index"
+      ],
+      "@styles/*": [
+        "styles/*"
+      ],
+      "@styles": [
+        "styles/index"
+      ],
+      "@utils/*": [
+        "utils/*"
+      ],
+      "@utils": [
+        "utils/index"
+      ],
+      "@views/*": [
+        "views/*"
+      ],
+      "@views": [
+        "views/index"
+      ]
+    }
+  }
+}
