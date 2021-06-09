@@ -69,5 +69,5 @@ module.exports = {
       version: 'detect',
     },
   },
-  ignorePatterns: ['build/*', 'node_modules/*', 'react-app-env.d.ts'],
+  ignorePatterns: ['build/*', 'node_modules/*', 'react-app-env.d.ts', 'reportWebVitals.ts'],
 };
