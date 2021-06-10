@@ -14,7 +14,7 @@ const ListPeople: FC<Props> = ({ people, filter }) => {
   return (
     <StyledList>
       {list
-        .filter(({ username }) => username.indexOf(filter) !== -1)
+        .filter(({ name, username }) => username.indexOf(filter) !== -1 || name.indexOf(filter) !== -1)
         .map(({ id, name, username }) => (
           <li key={`list-item-${id}`}>
             <StyledLp>{`${id}.`}</StyledLp> <StyledName>{name}</StyledName>{' '}

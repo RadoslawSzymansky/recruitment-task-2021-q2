@@ -43,7 +43,7 @@ describe('list people', () => {
     expect(getByText('there are no users')).toBeInTheDocument();
   });
   it('render data with filter', async () => {
-    const { getByText } = render(<ListPeople filter='B' people={data as Person[]} />);
+    const { getByText } = render(<ListPeople filter='Bret' people={data as Person[]} />);
 
     expect(getByText(`${data[0].id}.`)).toBeInTheDocument();
     expect(getByText(data[0].name)).toBeInTheDocument();
