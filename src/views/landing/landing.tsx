@@ -2,38 +2,10 @@ import React, { FC, useState, useRef } from 'react';
 import { useQuery } from 'react-query';
 import { Title, ContentWrapper } from '@common/components';
 import { Align } from '@common/components/title/title.enum';
-import {
-  StyledContainer,
-  StyledList,
-  StyledItem,
-  StyledLp,
-  StyledName,
-  StyledUserName,
-  StyledInput,
-} from './landing.styled';
+import { StyledContainer, StyledInput } from './landing.styled';
 import { Person } from './landing.types';
 import fetchUsersList from './landing.api';
-
-type Props = {
-  people?: Person[];
-  filter: string;
-};
-
-const ListPeople: FC<Props> = ({ people, filter }) => {
-  const list = people || [];
-
-  return (
-    <StyledList>
-      {list
-        .filter(({ username }) => username.indexOf(filter) !== -1)
-        .map(({ id, name, username }) => (
-          <StyledItem key={`list-item-${id}`}>
-            <StyledLp>{id}.</StyledLp> <StyledName>{name}</StyledName> <StyledUserName>@{username}</StyledUserName>
-          </StyledItem>
-        ))}
-    </StyledList>
-  );
-};
+import ListPeople from './list-people';
 
 const Landing: FC = () => {
   const [filter, setFilter] = useState<string>('');
