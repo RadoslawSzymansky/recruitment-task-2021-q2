@@ -6,6 +6,7 @@ module.exports = {
     alias: {
       '@assets': path.resolve(__dirname, 'src/assets/'),
       '@base': path.resolve(__dirname, 'src/base/'),
+      '@common': path.resolve(__dirname, 'src/common/'),
       '@layouts': path.resolve(__dirname, 'src/layouts/'),
       '@styles': path.resolve(__dirname, 'src/styles/'),
       '@utils': path.resolve(__dirname, 'src/utils/'),
@@ -17,6 +18,7 @@ module.exports = {
       moduleNameMapper: {
         '^@assets(.*)$': '<rootDir>/src/assets$1',
         '^@base(.*)$': '<rootDir>/src/base$1',
+        '^@common(.*)$': '<rootDir>/src/common$1',
         '^@layouts(.*)$': '<rootDir>/src/layouts$1',
         '^@styles(.*)$': '<rootDir>/src/styles$1',
         '^@utils(.*)$': '<rootDir>/src/utils$1',
