@@ -1,10 +1,7 @@
 import React, { FC } from 'react';
 
-const Portal: FC = ({ children }) => (
-  <div>
-    layout
-    {children}
-  </div>
-);
+import { StyledMain } from './portal.styled';
+
+const Portal: FC = ({ children }) => <StyledMain>{children}</StyledMain>;
 
 export default Portal;
